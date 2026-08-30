@@ -18,13 +18,13 @@ I use this for content research constantly. I don't ask one model to browse, rem
 
 That reviewer is a second checker, scoring the work against the goal and kicking it back into the loop if it's weak. I've seen setups use a threshold around 85 before anything moves forward. I wouldn't treat that number as gospel for your project. The number matters less than having a bar at all instead of a vibe.
 
-Generation and judgment want different people doing them, even inside a machine. The part writing the answer wants to finish, it gets attached to its own draft. The part checking needs a completely different posture: what's missing, what's unsupported, what breaks in the real world. Separate those two jobs and the whole system gets easier to trust.
+Generation and judgment want different people doing them, even inside a machine. The part writing the answer wants to finish, it gets attached to its own draft. The part checking needs a completely different posture: what's missing, what's unsupported, what breaks in the real world. Separate those 2 jobs and the whole system gets easier to trust.
 
 Parallel work saves attention too. Send three agents after three independent topics and none of them need to carry the same giant pile of context, each one only carries what it needs. Don't make every worker haul the whole warehouse when they only need one shelf.
 
 Tokens are the small chunks of text a model reads and writes. Load too many and you pay more, run slower, lose focus. So graph engineering is also attention management. You decide what each branch needs to know, what it hands back, and how the final answer gets checked.
 
-None of this means every task needs a graph. Need a recipe idea? A normal prompt is fine. Renaming a file doesn't need five agents and a reviewer. Graphs earn their keep when the job has independent pieces, real risk, or a quality bar you actually care about. Match the structure to the work, or it turns into theater.
+None of this means every task needs a graph. Need a recipe idea? A normal prompt is fine. Renaming a file doesn't need 5 agents and a reviewer. Graphs earn their keep when the job has independent pieces, real risk, or a quality bar you actually care about. Match the structure to the work, or it turns into theater.
 
 ## The pipeline, not just one shot
 
@@ -44,7 +44,7 @@ Some setups chain coding agents, avatar tools, voice tools, rendering, browser a
 
 Triggers matter more than people think. A trigger is just whatever kicks off a process, a morning alarm, a calendar time, whatever. Research, production, and posting should each start on their own trigger, because they need different context. If posting only needs the finished video, caption, and time, it doesn't need to reload every research note. If editing only needs the script and audio, it doesn't need every topic you rejected. Split triggers cut repeated context, and they make failures cleaner: if posting breaks, Monday's research is still sitting there fine.
 
-Concrete version: Monday's research trigger surfaces twenty topics, the filter keeps five. Tuesday's production trigger turns those five into scripts, audio, video drafts. Friday's posting trigger publishes whatever got approved. If the avatar generation blows up on Tuesday, Monday's research doesn't disappear with it.
+Concrete version: Monday's research trigger surfaces 20 topics, the filter keeps 5. Tuesday's production trigger turns those 5 into scripts, audio, video drafts. Friday's posting trigger publishes whatever got approved. If the avatar generation blows up on Tuesday, Monday's research doesn't disappear with it.
 
 I want to be careful with the word automatic here. I've seen strong claims about automation, follower growth, revenue, hours saved. Treat those as one source's example, not a promise for your setup. A system running many steps by itself still needs human review, especially the moment it speaks under your name to your audience.
 
@@ -82,13 +82,13 @@ I'll say this plainly: the harness around a model can matter more than which mod
 
 Stories about coding agents doing wild things make the tools sound safer than they are. I'm not going to turn any one story into proof that a specific tool is safe. The actual lesson: put boundaries around anything before it touches files, inboxes, calendars, deployments, contracts, or money.
 
-Same logic applies to review. Whoever builds the thing wants to finish it, and if that same agent also grades its own work, it defends its own choices. A separate reviewer catches blind spots because its whole job is different from the start. Ask an agent for a ten-slide lesson plan, a separate reviewer checks whether slide one assumes too much, whether the examples fit beginners, whether any claim needs a source. Then the builder fixes only what's actually weak. That's a harness doing real work: roles, checks, a path back to correction.
+Same logic applies to review. Whoever builds the thing wants to finish it, and if that same agent also grades its own work, it defends its own choices. A separate reviewer catches blind spots because its whole job is different from the start. Ask an agent for a 10-slide lesson plan, a separate reviewer checks whether slide one assumes too much, whether the examples fit beginners, whether any claim needs a source. Then the builder fixes only what's actually weak. That's a harness doing real work: roles, checks, a path back to correction.
 
 The model is one part of the system. I get better results with a harness wrapped around it: context, tools, memory, guardrails, a reviewer that isn't the builder, and human approval on anything that actually matters.
 
-## Five gaps that aren't the model's fault
+## 5 gaps that aren't the model's fault
 
-Every tool has gaps. A coding agent can feel unstoppable and still whiff on basics. I think about five common ones: video understanding, research depth, project memory, visual design, token cost. Framing it this way stops me from treating one agent as one magic brain.
+Every tool has gaps. A coding agent can feel unstoppable and still whiff on basics. I think about 5 common ones: video understanding, research depth, project memory, visual design, token cost. Framing it this way stops me from treating one agent as one magic brain.
 
 Video understanding first. A text-based agent handles a transcript fine. A video is more than words, it's frames, timing, faces, slides, cuts, captions. Give the agent only the transcript and it can miss what's actually on screen. Hand me a transcript of a cooking video and I'll understand the recipe. I won't know if the shot was blurry, if the knife technique looked dangerous, if the caption covered up the ingredient. Video needs visual evidence, not just words.
 
@@ -96,15 +96,15 @@ Research depth is next. A quick browse comes out shallow. A heavy research run g
 
 Project memory is third. Big projects scatter the important facts across a hundred files. Load everything and you burn tokens without necessarily keeping the thread. Load too little and the agent starts guessing. A project map, basically a guide to what lives where, fixes this by letting the agent navigate before it acts instead of stumbling through the whole codebase first.
 
-Fourth, visual design. Coding agents ship interfaces that function and still look plain, sometimes awkward. Design needs taste: spacing, hierarchy, contrast, motion that helps instead of distracting. Design-focused skills and an actual look at the rendered screen help here, though I wouldn't call either one a guarantee. Ten buttons that all look equally important, and you have no idea where to look. Random spacing makes a page feel cheap. Animation that moves too much gets tiring fast. A real design fix hands the agent references, standards, and a way to look at the actual screen, not just the code behind it.
+Fourth, visual design. Coding agents ship interfaces that function and still look plain, sometimes awkward. Design needs taste: spacing, hierarchy, contrast, motion that helps instead of distracting. Design-focused skills and an actual look at the rendered screen help here, though I wouldn't call either one a guarantee. 10 buttons that all look equally important, and you have no idea where to look. Random spacing makes a page feel cheap. Animation that moves too much gets tiring fast. A real design fix hands the agent references, standards, and a way to look at the actual screen, not just the code behind it.
 
 Fifth, token cost. Long context costs money and slows the agent down. I've seen one cost-saving setup report something like a 20% reduction in token use, in its own tests. I wouldn't bank on that number for a different project. The number is less useful than the habit: don't load what you don't need, summarize what's stable, split independent work, keep reusable instructions in skills, use project maps, route research to the right tool, check if a cheaper step solves it before handing the model everything.
 
-These five gaps stop lazy diagnosis. Coding agent fails, and the problem might not be the model at all. Maybe it had no visual access. Maybe the research path was wrong. Maybe nobody built a memory map. Maybe the design brief was vague. Maybe the context was bloated and expensive. Find the missing layer instead of blaming the whole tool. No video access, add visual evidence. Can't remember the project, add a map. Design comes out bland, add references and an actual screen check. Spending too much, cut the context and split the work. Match the fix to the actual failure.
+These 5 gaps stop lazy diagnosis. Coding agent fails, and the problem might not be the model at all. Maybe it had no visual access. Maybe the research path was wrong. Maybe nobody built a memory map. Maybe the design brief was vague. Maybe the context was bloated and expensive. Find the missing layer instead of blaming the whole tool. No video access, add visual evidence. Can't remember the project, add a map. Design comes out bland, add references and an actual screen check. Spending too much, cut the context and split the work. Match the fix to the actual failure.
 
-## Four agents I actually use
+## 4 agents I actually use
 
-Now bring it down to an actual day. Four practical agents, built around coordination, creativity, clarity, and conversation. I like that order because it starts with the day you already have, not some fantasy office where everything's clean.
+Now bring it down to an actual day. 4 practical agents, built around coordination, creativity, clarity, and conversation. I like that order because it starts with the day you already have, not some fantasy office where everything's clean.
 
 Coordination first. It stops your day from leaking through interruptions. However you feel about the exact numbers on workplace interruptions, emails, and chat pings, the everyday point stands on its own: if messages and meetings run your attention, you need something that makes the day visible.
 
@@ -116,21 +116,21 @@ This is where connectors come in, giving the agent access to something like Gmai
 
 There's a shape that works well for this kind of prompt: task, tool, categories, output, boundary. What to do, where to work, how to sort it, what you want back, what it must never do. Review unread messages, use Gmail, group by urgency, give me a short plan, don't send anything without my say-so.
 
-Creativity is the second agent. It doesn't mean the machine becomes the artist and you vanish. You bring the rough material, it helps shape something you can actually judge. Rough notes turning into a beginner lesson with eight or ten slides, the agent asking follow-up questions before it fills any gaps, that's the shape.
+Creativity is the second agent. It doesn't mean the machine becomes the artist and you vanish. You bring the rough material, it helps shape something you can actually judge. Rough notes turning into a beginner lesson with 8 or 10 slides, the agent asking follow-up questions before it fills any gaps, that's the shape.
 
 That last part matters more than it sounds. If the agent doesn't understand your notes, you don't want it inventing the missing piece. You want it asking. A good creativity agent turns confusion into a question first. Then it builds a real draft, a deck or a document, and you edit from there. You're still the director. It just hands you a starting point that beats a blank page.
 
 Skills help here too. A presentation skill teaches it to build an actual slide file instead of dumping text in chat. A brand skill teaches it your colors, fonts, layout rules. Still check the result yourself, because a file that exists isn't the same as a file that teaches anything.
 
-Clarity is third. It helps when something's too spread out or too dense to hold in your head. Two modes I actually use: telescope and microscope. Telescope looks wide. Microscope looks close.
+Clarity is third. It helps when something's too spread out or too dense to hold in your head. 2 modes I actually use: telescope and microscope. Telescope looks wide. Microscope looks close.
 
 Telescope mode when information is scattered, say you want to understand a company before a partnership call. The agent gathers public information, reviews past messages only if you've deliberately connected that account for research, and hands you a tight brief. Ask it to verify and stay concise, because broad research turns into a pile of interesting noise fast if you let it.
 
-Microscope mode when the risk lives inside one document. A contract's the obvious example. Ask for a summary and a confusing contract just gets shorter while the dangerous clause hides in plain sight. Better ask for a five-column table instead: what the clause says, what it means in plain language, why it matters, how risky it is, what question to ask before you sign.
+Microscope mode when the risk lives inside one document. A contract's the obvious example. Ask for a summary and a confusing contract just gets shorter while the dangerous clause hides in plain sight. Better ask for a 5-column table instead: what the clause says, what it means in plain language, why it matters, how risky it is, what question to ask before you sign.
 
 Sensitive data needs real care here. Don't bring private names, account numbers, client secrets, or personal terms into the agent if it doesn't need them. Mask or strip what it doesn't need to see. Clarity shouldn't cost you exposure you didn't need to take on.
 
-Conversation is the fourth agent, and it's the one people underestimate because it feels less technical. Might be the most human of the four. It lets you rehearse out loud before something high stakes: a client closing call, an interview, teaching a live class, a negotiation.
+Conversation is the fourth agent, and it's the one people underestimate because it feels less technical. Might be the most human of the 4. It lets you rehearse out loud before something high stakes: a client closing call, an interview, teaching a live class, a negotiation.
 
 Voice is the whole point. Type the answer and you might think you know it. Say it out loud and your mouth finds the weak spots. You hear yourself hesitate. You notice the price answer going defensive, or the explanation running too long. The agent plays the other person, asks one question at a time, pushes back, then flips into trainer mode once the simulation's done.
 
@@ -140,7 +140,7 @@ Start with one of these that makes your work visible before it starts acting for
 
 ## Still the director
 
-All five pieces connect. Graph engineering teaches me to arrange work into branches, loops, and verification. The content pipeline teaches me to keep research, writing, production, editing, and posting from blurring into one blob. Harness engineering teaches me to build the control layer around the model itself. The five gaps teach me to diagnose the missing layer before I blame the whole tool. The four practical agents bring all of it back down to an actual Tuesday.
+All 5 pieces connect. Graph engineering teaches me to arrange work into branches, loops, and verification. The content pipeline teaches me to keep research, writing, production, editing, and posting from blurring into one blob. Harness engineering teaches me to build the control layer around the model itself. The 5 gaps teach me to diagnose the missing layer before I blame the whole tool. The 4 practical agents bring all of it back down to an actual Tuesday.
 
 Underneath all of it: structure around the model. The model is strong and still needs direction, the right context, the right tool, the right boundary, the right check. Feed it your confusion and it multiplies confusion. Give it a clear job and it multiplies clear work.
 

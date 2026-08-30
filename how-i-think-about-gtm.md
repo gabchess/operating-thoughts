@@ -4,7 +4,7 @@ People ask me what GTM means once you get past the acronym, past the funnel diag
 
 ## Remove the step, don't add the button
 
-Picture someone cooking dinner. Every tool they own is already out on the counter: three peelers, a garlic press, a mandoline, two pans they never use. They only need to chop one onion. They pick up three gadgets before they touch the knife, and dinner is late because they spent it choosing instead of chopping.
+Picture someone cooking dinner. Every tool they own is already out on the counter: 3 peelers, a garlic press, a mandoline, 2 pans they never use. They only need to chop one onion. They pick up three gadgets before they touch the knife, and dinner is late because they spent it choosing instead of chopping.
 
 I've watched that same pile show up on a screen. A product that can do a lot still makes the person hunt for the one thing they came to do. The extra steps are the product, even when nobody planned it that way, and people feel the delay even when they can't say why.
 
@@ -34,7 +34,7 @@ The pull is always to add. A stakeholder asks for a field, the field ships, and 
 
 ## GTM is the pipe between rooms
 
-Now picture a small kitchen with three stations. One person chops. One stands at the stove. One plates. They never look at each other. The onions sit while the pan burns. The plate goes out with the wrong garnish on it. Nobody in that kitchen is slow. The meal fails in the gap between the stations.
+Now picture a small kitchen with 3 stations. One person chops. One stands at the stove. One plates. They never look at each other. The onions sit while the pan burns. The plate goes out with the wrong garnish on it. Nobody in that kitchen is slow. The meal fails in the gap between the stations.
 
 I've watched companies run that exact kitchen. Marketing writes the page and buys the attention, in one room. Next door, a seller works off a calendar and a list of names somebody handed them. Further back, someone's still holding last week's spreadsheet. Each room can look busy on its own clock. The lead still dies in the doorway between them.
 
@@ -58,7 +58,7 @@ I started with an orchestrator, the agent that runs the whole sequence so jobs f
 
 I'll say this plainly because it matters: the MCP scrape tools read an already-normalized CSV. They don't open a browser. I'm naming that because a demo can look like live browsing when it's just a file read, and I don't want that ambiguity to slide.
 
-The mix I shipped was 71 leads from Clutch and 29 from Crunchbase. Clutch lists agencies, and that's where most of the shipped mix came from. Crunchbase lists funded companies, and I pointed the scraper at it like it was the main well, which was the wrong call. Seventy-four percent of that Crunchbase pull had already raised over $20 million, outside the band I was supposed to be targeting. The lesson is simple: measure the source before you build the scraper around it. I built first and measured after, which is backwards.
+The mix I shipped was 71 leads from Clutch and 29 from Crunchbase. Clutch lists agencies, and that's where most of the shipped mix came from. Crunchbase lists funded companies, and I pointed the scraper at it like it was the main well, which was the wrong call. 74% of that Crunchbase pull had already raised over $20 million, outside the band I was supposed to be targeting. The lesson is simple: measure the source before you build the scraper around it. I built first and measured after, which is backwards.
 
 Out of 357 companies, only 7 cleared intent as a hard filter, where intent meant a dated public sign, a hiring post or a page asking for that kind of work. That 357 is its own separate pass from the shipped 100, and I keep those two numbers in different pockets on purpose so nobody blends them into one slide that sounds better than what happened.
 
@@ -72,7 +72,7 @@ I build the pass so the next person can cook without me standing there pointing 
 
 ## Every platform is a different room to walk into
 
-Same stew, three different serving moments. Across a crowded bar you get one sentence and maybe a glance at the bowl before someone's attention moves on. That's X. At the first bite, someone decides whether to keep eating in about a second and a half. That's TikTok. On the table, the bowl is also a picture of who you are, for whoever scrolls back to it later. That's Instagram.
+Same stew, 3 different serving moments. Across a crowded bar you get one sentence and maybe a glance at the bowl before someone's attention moves on. That's X. At the first bite, someone decides whether to keep eating in about a second and a half. That's TikTok. On the table, the bowl is also a picture of who you are, for whoever scrolls back to it later. That's Instagram.
 
 On X I treat the fast glance as a take: one sentence over a screenshot, judged in minutes. I write the line I'd throw across a bar and then stop. Extra text under the screenshot is a second serving nobody asked for, and the timeline's already moved to the next bowl. I've deleted lines I wouldn't say out loud to a person standing two stools away holding a drink. Timing's the other half of it. A take that lands at 2am in a dead room is the same sentence, wasted in an empty bar.
 
@@ -88,13 +88,13 @@ I spend real time on the still image, because the still is what's left once the 
 
 The bowl on the table is also a handshake. I call that brand, and brand is every human touchpoint, including the ones with no pixel attached. The way a seller says hello on a call is one. So is the error message that pops up at 11pm when nobody from marketing is even in the room to see it.
 
-I think about four things a touchpoint can do. Keeping people informed means someone can find the next fact without sending a message into the void, a date on a page does that job quietly. Inspired is the heat that makes someone stand up after reading a post and go try the thing themselves. Involved means there's a door back in, a reply a tired person can answer at 4pm. Interested is the one that lasts past the sitting, meaning next week they still want to look at the next bowl.
+I think about 4 things a touchpoint can do. Keeping people informed means someone can find the next fact without sending a message into the void, a date on a page does that job quietly. Inspired is the heat that makes someone stand up after reading a post and go try the thing themselves. Involved means there's a door back in, a reply a tired person can answer at 4pm. Interested is the one that lasts past the sitting, meaning next week they still want to look at the next bowl.
 
 I look at numbers, but a number only earns a seat at the table when it changes what I do next. A view count I can't act on is a bowl I'm still staring at after I already decided to eat. I dropped a chart from a weekly review once because nothing about next week would've changed no matter which way that line moved.
 
 I've rewritten the same idea for a fast glance and watched the words go quiet the moment I set that same bowl down on a table meant for something slower. I'd kept the sentence and forgotten which serving it was for. Write for the physics of whichever window you're standing in.
 
-## Two crowds want two different things
+## 2 crowds want 2 different things
 
 Picture a night stall that sells to people who already know the cook. They come for the smell and the usual bowl. You can fill that stall on a good night and still not meet a single new person. Down the street there's a supermarket aisle, jars with labels, picked by strangers who've never heard the cook's name. The stall is where money and belief show up first, among people who already speak your language. The aisle is where daily users come from.
 
@@ -146,7 +146,7 @@ A human still has to decide whether the row lives, and whether the promise is sa
 
 ## Still the director
 
-Too many companies stack steps onto the register without noticing. Three tickets, three different physics. A handshake instead of a logo. A kitchen pass sitting unattended between marketing, sales, and data. Two rooms that badly need a translator between them.
+Too many companies stack steps onto the register without noticing. 3 tickets, 3 different physics. A handshake instead of a logo. A kitchen pass sitting unattended between marketing, sales, and data. 2 rooms that badly need a translator between them.
 
 You still pick the ICP, the kind of company you're willing to spend time on, and I make that choice before any script runs. The gate is the same kind of choice. So is the window you choose to stand in tonight, X or TikTok or Instagram, stall or aisle.
 
