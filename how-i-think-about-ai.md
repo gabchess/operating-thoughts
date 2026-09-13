@@ -2,7 +2,7 @@
 
 People ask me all the time how I actually work with AI, day to day. Not the buzzwords. The real mental model, the one I use building agents, running a content pipeline, doing security research on the side. So here it is, the way I'd actually explain it to a friend, not the way a whitepaper would.
 
-## Graphs, not just prompts
+## Graphs & loops
 
 Start with a kitchen. Tell one person to clean it and give them one vague line, they wipe the table and call it done. Give them a checklist, they do more. Split that checklist across three people, one washes dishes, one hits the stove, one puts food away, and someone checks the room before everyone leaves. That's basically graph engineering, and it's less scary than it sounds.
 
@@ -26,7 +26,7 @@ Tokens are the small chunks of text a model reads and writes. Load too many and 
 
 None of this means every task needs a graph. Need a recipe idea? A normal prompt is fine. Renaming a file doesn't need 5 agents and a reviewer. Graphs earn their keep when the job has independent pieces, real risk, or a quality bar you actually care about. Match the structure to the work, or it turns into theater.
 
-## The pipeline, not just one shot
+## The workflows
 
 Now zoom out to a real pipeline. Think factory, minus the machines and smoke. A content pipeline: each step takes one input, does one job, hands the result to the next step. Short-form video is the clean example.
 
@@ -102,7 +102,7 @@ Fifth, token cost. Long context costs money and slows the agent down. I've seen 
 
 These 5 gaps stop lazy diagnosis. Coding agent fails, and the problem might not be the model at all. Maybe it had no visual access. Maybe the research path was wrong. Maybe nobody built a memory map. Maybe the design brief was vague. Maybe the context was bloated and expensive. Find the missing layer instead of blaming the whole tool. No video access, add visual evidence. Can't remember the project, add a map. Design comes out bland, add references and an actual screen check. Spending too much, cut the context and split the work. Match the fix to the actual failure.
 
-## 4 agents I actually use
+## Using agents to improve clarity & delivery
 
 Now bring it down to an actual day. 4 practical agents, built around coordination, creativity, clarity, and conversation. I like that order because it starts with the day you already have, not some fantasy office where everything's clean.
 
@@ -138,7 +138,7 @@ Trainer mode is where the real work happens. After the role play: what went wron
 
 Start with one of these that makes your work visible before it starts acting for you. Let it coordinate, create, clarify, or rehearse. Keep the approval gate around email, scheduling, connectors, contracts, and anything sensitive.
 
-## Still the director
+## The human in the loop is the final gate
 
 All 5 pieces connect. Graph engineering teaches me to arrange work into branches, loops, and verification. The content pipeline teaches me to keep research, writing, production, editing, and posting from blurring into one blob. Harness engineering teaches me to build the control layer around the model itself. The 5 gaps teach me to diagnose the missing layer before I blame the whole tool. The 4 practical agents bring all of it back down to an actual Tuesday.
 
