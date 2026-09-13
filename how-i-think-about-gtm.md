@@ -1,6 +1,6 @@
-# How I think about GTM
+# How I think about GTM engineering
 
-People ask me what GTM means once you get past the acronym, past the funnel diagram everyone draws on a whiteboard. What it means for me is the daily work: building the pipes between marketing, sales, and data, and having the taste to know what a screen should even ask a person to do. So here's how I think about it, the way I'd explain it if we were sitting down together with a whiteboard between us.
+People ask me what GTM engineering means once you get past the acronym, past the funnel diagram everyone draws on a whiteboard. What it means for me is the daily work: building the pipes between marketing, sales, and data, and having the taste to know what a screen should even ask a person to do. So here's how I think about it, the way I'd explain it if we were sitting down together with a whiteboard between us.
 
 ## Remove the step, don't add the button
 
