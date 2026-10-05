@@ -1,4 +1,4 @@
-# How I think about GTM engineering
+# How I think about market engineering
 
 Fifteen years in marketing taught me to ask why someone would care about a product. I've worked on positioning and spent years researching audiences. As a ghostwriter, I had to understand someone else's point of view well enough to write in their voice.
 
